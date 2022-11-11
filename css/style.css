@@ -1,0 +1,400 @@
+@charset "UTF-8";
+@font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+html,body { height: 100%; letter-spacing: -1px; }
+body { font-family: 'S-CoreDream-3Light'; color: #333; }
+ul, ol { list-style: none; }
+a { text-decoration: none; color: inherit; }
+h1,h2,h3,h4,h5,h6 { line-height: 1; margin: 0; padding: 0; font-weight: 600; font-size: inherit; }
+
+#snb {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 1005;
+  background-color: #fff;
+  border-bottom: 1px solid #ececec;
+}
+
+#snb .siteUtilGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  width: 100%;
+  max-width: 1400px;
+  height: 44px;
+  padding-right: 180px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+#snb .siteUtilGroup .linkSite {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#snb .siteUtilGroup .linkSite > div > a {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding: 0px 20px;
+  font-family: 'S-Core Dream 5';
+  font-size: 16px;
+  border-right: 1px solid #ececec;
+  line-height: 1;
+}
+
+#snb .siteUtilGroup .linkSite > div:nth-child(1) {
+  border-left: 1px solid #ececec;
+}
+
+
+/*-----------------------------------*/
+
+#snb #siteMenu {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100%;
+}
+
+#snb #siteMenu div {
+  position: relative;
+}
+
+#snb #siteMenu div + div {
+  margin-left: 18px;
+}
+
+#snb #siteMenu div a {
+  display: flex;
+  align-items: center;
+  font-family: 'S-Core Dream 5';
+  font-size: 14px;
+}
+
+#snb #siteMenu div a:before {
+  content:'';
+  margin-right: 7px;
+  margin-left: 14px; /*내가함*/
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+#snb #siteMenu div.login a:before {
+  width: 14px;
+  height: 19px;
+  background-image: url('../img/icon/ico_siteJoin.png');
+}
+
+#snb #siteMenu div.join a:before {
+  width: 13px;
+  height: 18px;
+  background-image: url('../img/icon/ico_siteLogin.png');
+}
+
+#snb #siteMenu div.langs a:before {
+  width: 17px;
+  height: 17px;
+  background-image: url('../img/icon/ico_siteLangs.png');
+}
+
+/*-----------------------------------*/
+
+#snb .onceView {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#snb .onceView .onceViewBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 44px;
+  font-family: 'S-Core Dream 5';
+  font-size: 17px;
+  line-height: 1;
+  color: #fff;
+  letter-spacing: -0.5px;
+  background-color: #636676;
+  border-radius: 0px 0px 10px 10px;
+  border-style: none;
+}
+
+#snb .onceView .onceViewBtn:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  margin-right: 9px;
+  background-image: url('../img/icon/ico_onceView.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+/*-----------------------------------*/
+
+.headerInner {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.headerInner .logo {
+  position: absolute;
+  left: 0;
+  top: 21px;
+}
+
+.headerInner .logo a {
+  display: block;
+}
+
+.headerInner img {
+  /* transition: all .3s; */
+  /* width: 139px;
+  height: 47px; */
+}
+
+/*-----------------------------------*/
+
+.gnb_area {
+  position: relative;
+  z-index: 1000;
+  background-color: #fff;
+  border-bottom: 1px solid #ececec;
+}
+
+.gnb_area .btnTopArea {
+  position: absolute;
+  top: 31px;
+  /* right: 50%; */
+  right: 0;
+  display: flex;
+  /* margin-right: -700px; */
+  margin-right: 10%;
+  z-index: 402;
+}
+
+.gnb_area .btnTopArea a {
+  margin: 10px 5px; /*내꺼*/
+}
+
+/*-----------------------------------*/
+
+#gnb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 1400px;
+  height: 95px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-right: 140px;
+  box-sizing: border-box;
+  z-index: 401px;
+  /* transition: all 0.3s; */
+}
+
+#gnb > li {
+  height: 100%;
+}
+
+#gnb > li > a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 29px;
+  font-family: 'S-Core Dream 5';
+  font-size: 21px;
+  color: #222;
+  text-align: center;
+  z-index: 1;
+  /* transition: all 0.3s; */
+}
+
+/*-----------------------------------*/
+
+#section2 {
+  position: relative;
+  padding: 50px 0px 90px;
+  background: linear-gradient(180deg, #f7f7f7 0, #fff 40%, #fff 100%);
+}
+
+#section2 .section2-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#section2 .section2-top .mainWeatherArea .weatherBox {
+  display: flex;
+  align-items: center;
+}
+
+#section2 .section2-top .mainWeatherArea .weatherBox .weatherInfo {
+  display: flex;
+  align-items: center;
+}
+
+#section2 .section2-top .mainWeatherArea .weatherBox .weatherInfo:after {
+  content: '';
+  width: 13px;
+  height: 13px;
+  margin-left: 5px;
+  background-image: url('../img/icon/btn_moreMini.png');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+#section2 .section2-top .mainWeatherArea .weatherBox .weatherInfo .txt {
+  margin-left: 10px;
+  color: #888;
+}
+
+#section2 .section2-top .mainWeatherArea .weatherBox .weatherInfo .state {
+  margin-left: 7px
+}
+
+#section2 .section2-top .mainSearchArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin:0 5.42857142857% 0 6.42857142857%;
+}
+
+/*-----------------------------------*/
+
+#section2 .section2-top .mainSearchArea .searchBoxWrap .searchBox {
+  position: relative;
+  display: flex;
+  padding-right: 50px;
+  border: 2px solid #636677;
+  border-radius: 15px;
+}
+
+#section2 .section2-top .mainSearchArea .searchBoxWrap .searchBox select {
+  /* width: 110px; */
+  height: 50px;
+  padding: 0px 25px 0px 10px;
+  /* background: url('../img/icon/main_select_ico.png'); */
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  border: 0px;
+  font-size: 15px;
+}
+
+#section2 .section2-top .mainSearchArea .searchBoxWrap .keywordInput input {
+  width: 100%;
+  height: 50px;
+  padding: 0px 10px;
+  border: 0px;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+#section2 .section2-top .mainSearchArea .searchBoxWrap .btnSearch {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#section2 .section2-top .mainSearchArea .searchBoxWrap .btnSearch a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url('../img/icon/ico_search.png');
+  background-color: #636677;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 13px 10px 10px 13px;
+}
+
+#section2 .section2-top .mainSearchArea .keywordArea {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 20px;
+  margin-top: 15px;
+  line-height: 20px;
+}
+
+#section2 .section2-top .mainSearchArea .keywordArea h5 {
+  position: absolute;
+  left: 8px;
+  top: 2px; /*내답, 원래는0px; */
+}
+
+#section2 .section2-top .mainSearchArea .keywordArea .keywordSlick {
+  width: 100%;
+  padding: 0px 60px 0px 100px;
+}
+
+#section2 .section2-top .mainSearchArea .keywordArea .keywordSlick button {
+  position: absolute;
+  font-size: 0;
+  /* line-height: 0; */ /*내답, 원래는 있음*/
+  /* top: 50%; */ /*내답, 원래는 있음*/
+  height: 20px;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+#section2 .section2-top .mainSearchArea .keywordArea .keywordSlick .slick-prev {
+  left: auto;
+  right: 50px;
+}
+#section2 .section2-top .mainSearchArea .keywordArea .slick-prev:before {
+  content: '';
+  border-right: 7px solid #636677;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+#section2 .section2-top .mainSearchArea .keywordArea .keywordSlick .slick-next {
+  left: auto;
+  right: 25px;
+}
+#section2 .section2-top .mainSearchArea .keywordArea .slick-next:before {
+  content: '';
+  border-left: 7px solid #636677;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.mainSearchArea .keywordArea .keywordSlick .slick-list a {
+  font-size: 15px;
+  margin: 0px 8px;
+  line-height: 18px; /*내답, 원래는 18px*/
+  /* display: block; */
+  /* border: 1px solid transparent; */
+  /* float: left; */
+  /* height: 100%; */
+  /* min-height: 1px; */
+}
+
+
+
+
+
+/**/

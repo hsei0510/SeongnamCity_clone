@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <title>성남시청</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="./favi_io/apple-touch-icon.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./favi_io/favicon-32x32.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="./favi_io/favicon-16x16.png"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./css/initial.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/> -->
+    <!-- <link rel="stylesheet" href="./css/swiper.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <header id="header">
+      <div id="snb">
+        <div class="siteUtilGroup">
+          <div class="linkSite">
+            <div><a href="#" target="_blank">성남관광</a></div>
+            <div><a href="#" target="_blank">배움숲</a></div>
+            <div><a href="#" target="_blank">성남시의회</a></div>
+          </div>
+          <div id="siteMenu" class="siteMenu">
+            <div class="login"><a href="#" class="gnbLogin">로그인</a></div>
+            <div class="join"><a href="#" class="gnbLogin">회원가입</a></div>
+            <div class="langs active">
+              <a href="#" class="gnbLogin">언어변경</a>
+              <!-- <div class="lang_list">
+                <ul>
+                  <li id="kr"><a href="#" target="_blank">한국어</a></li>
+                  <li id="kte"><a href="#" target="_blank">English</a></li>
+                  <li id="ktc"><a href="#" target="_blank">中國語</a></li>
+                  <li id="ktj"><a href="#" target="_blank">日本語</a></li>
+                </ul>
+                <button type="button" class="close" title="언어변경 닫기">닫기</button>
+              </div> -->
+            </div>
+          </div>
+          <div class="onceView">
+            <button id="onceViewBtn" class="onceViewBtn">패밀리사이트</button>
+          </div>
+        </div>
+      </div>
+      <div class="headerInner">
+        <h1 class="logo"><a href="#"><img src="./img/logo/logo.png" alt="성남시청 로고"></a></h1>
+      </div>
+      <div class="gnb_area">
+        <nav id="gnbNav">
+          <ul id="gnb" class="clearFix">
+            <li id="gnb1"><a href="#">시정소식</a></li>
+            <li id="gnb2"><a href="#">전자민원</a></li>
+            <li id="gnb3"><a href="#">시민참여</a></li>
+            <li id="gnb4"><a href="#">정보공개</a></li>
+            <li id="gnb5"><a href="#">성남소개</a></li>
+            <li id="gnb6"><a href="#">분야별정보</a></li>
+          </ul>
+        </nav>
+        <div class="btnTopArea">
+          <a href="#" class="btnTopTotal"><img src="./img/icon/ico_btnTopTotal.png" alt="더보기"></a>
+          <a href="#" class="btnTopSearch"><img src="./img/icon/ico_btnTopSearch.png" alt="돋보기"></a>
+        </div>
+      </div>
+    </header>
+
+    <div id="container" class="main">
+      <!-- <section id="section1"></section> -->
+      <section id="section2">
+        <div class="sectionGroup">
+          <div class="section2-top">
+            <div class="mainWeatherArea">
+              <div class="weatherBox">
+                <a class="weatherInfo" id="weatherStatusPopup" href="#" target="_blank">
+                  <span><img src="./img/icon/w1.png" alt="맑음"></span>
+                  <span>14℃</span>
+                </a>
+                <a class="weatherInfo" id="airStatusPopup" href="#" target="_blank">
+                  <span class="txt finedust">초미세먼지</span>
+                  <span class="state normal">보통</span>
+                </a>
+              </div>
+            </div>
+            <div class="mainSearchArea">
+              <form id="wisenutForm">
+                <fieldset>
+                  <div class="searchBoxWrap">
+                    <div id="searchBox" class="searchBox">
+                      <select name="collection" id="collection">
+                        <option value="ALL" selected=selected><a href="#">통합검색</a></option>
+                        <!-- <option>관련사이트</option>
+                        <option>디렉토리</option>
+                        <option>게시판</option>
+                        <option>웹페이지</option>
+                        <option>멀티미디어</option>
+                        <option>직원/업무</option> -->
+                      </select>
+                      <div class="keywordInput">
+                        <label for="query"></label>
+                        <input type="text" name="query" id="query" class="schInput1" placeholder="검색어를 입력하세요.">
+                      </div>
+                      <div class="btnSearch"><a href="#"></a></div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+              <div class="keywordArea">
+                <h5>인기검색어</h5>
+                <div id="keywordList" class="keywordSlick">
+                  <button class="slick-prev"></button>
+                  <button class="slick-next"></button>
+                  <div class="slick-list draggable">
+                    <a href="#">보건증</a>
+                    <a href="#">경제교류</a>
+                    <a href="#">가로주택</a>
+                    <a href="#">교류</a>
+                    <a href="#">재산세환급</a>
+                    <a href="#">조직도</a>
+                    <!-- <a href="#">여권</a>
+                    <a href="#">중원구청</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section2-bottom">
+            <div class="mainPopupZone">
+              <div class="mainPopArea imgType">
+                <div class="slick-button">
+                  <div class="numbering">
+                    <ul>
+                      <li class="persentation"><a href="#"><span><img src="./img/popupzone/20220826091834985.jpg" alt="slide1"></span></a></li>
+                      <!-- <li class="persentation"><span>2</span></li>
+                      <li class="persentation"><span>3</span></li>
+                      <li class="persentation"><span>4</span></li>
+                      <li class="persentation"><span>5</span></li> -->
+                    </ul>
+                  </div>
+                  <button class="pause">자동슬라이드 stop</button>
+                  <button class="play">자동슬라이드 play</button>
+                  <button class="prev">이전슬라이드</button>
+                  <button class="next">다음슬라이드</button>
+                  <button class="list">목록형보기</button>
+                </div>
+                <div id="bn_thumb_slider" class="mainPopup-slick">
+                  <div class="slick-list draggale">
+                    <div class="slick-track">
+                      <!-- <a href="#"><span><img src="./img/popupzone/20220826091834985.jpg" alt="slide1"></span></a> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mainMayorZone">
+              <div class="mayorTop">
+                <div class="txt">
+                  <img src="./img/common/slogan_logo.png" alt="첨단과 혁신의 희망도시 성남">
+                  <p>시장<span>신상진</span>입니다</p>
+                </div>
+                <a href="#">열린시장실</a>
+                <div class="mayorImg">
+                  <img src="./img/main/mayor_img.png" alt="시장님 사진">
+                </div>
+              </div>
+              <div class="mayorBottom">
+                <a href="#"><span>성남시에 바란다</span></a>
+                <a href="#"><span>포토 갤러리</span></a>
+                <a href="#"><span>신상진 핫라인</span></a>
+              </div>
+            </div>
+            <div class="quickZone">
+              <a href="#" class="quickItem welfare" target="_blank" title="성남시민 맞춤복지 새창열림">
+                <div>
+                  <span>성남시민</span>
+                  <span>맞춤복지</span>
+                </div>
+              </a>
+              <a href="#" class="quickItem service" id="quickService" target="_blank" title="자주찾는 서비스 팝업열기">
+                <div>
+                  <span>자주찾는</span>
+                  <span>서비스</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section3"></section>
+      <section id="section4"></section>
+      <section id="section5"></section>
+    </div>
+
+    <footer id="footer">
+      <div class="familySiteGroup"></div>
+      <div class="footerInner"></div>
+    </footer>
+  </body>
+</html>
