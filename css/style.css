@@ -208,7 +208,7 @@ h1,h2,h3,h4,h5,h6 { line-height: 1; margin: 0; padding: 0; font-weight: 600; fon
   padding-right: 140px;
   box-sizing: border-box;
   z-index: 401px;
-  /* transition: all 0.3s; */
+  transition: all 0.3s;
 }
 
 #header #gnbNav #gnb > li {
@@ -227,8 +227,110 @@ h1,h2,h3,h4,h5,h6 { line-height: 1; margin: 0; padding: 0; font-weight: 600; fon
   color: #222;
   text-align: center;
   z-index: 1;
-  /* transition: all 0.3s; */
+  transition: all 0.3s;
 }
+
+#header #gnbNav #gnb > li > a:hover {
+  color: #d84048;
+}
+
+/*-----------------------------------*/
+
+#header #gnbNav #gnb > li > ul {
+  position: absolute;
+  left: 0px;
+  top: 95px;
+  width: calc(100% + 30px );
+  width: 100%;
+  margin-left: -30px;
+  padding: 30px 0px;
+  background: #fff;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: none;
+}
+
+#header #gnbNav #gnb > li:hover > ul {
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#header #gnbNav #gnb > li > ul > li {
+  display: flex;
+  flex-direction: column;
+  width: calc( 20% - 30px );
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+
+
+#header #gnbNav #gnb > li > ul > li > a {
+  position: relative;
+  width: 100%;
+  padding: 10px 15px;
+  font-family: 'S-Core Dream 5';
+  font-size: 16px;
+  color: #555;
+  transition: 0.3s;
+  background-color: #fff;
+  border: 1px solid #c5c9d6;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#header #gnbNav #gnb > li > ul > li > a:hover {
+  color: #fff;
+  background-color: #d84048;
+  border: 1px solid #d84048;
+}
+
+#gnb > li > ul > li > a:after {
+  content: '';
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  width: 10px;
+  height: 16px;
+  margin-top: -8px;
+  background-image: url('../img/icon/arr_gnb_gray.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all 0.25s;
+  transform: rotate(90deg);
+}
+
+#gnb > li > ul > li.no_arrBtn > a:after {
+    background-image: none;
+}
+
+#header #gnbNav #gnb li > ul > li > ul {
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+#header #gnbNav #gnb li > ul > li > ul a {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: '맑은 고딕','Malgun Gothic','나눔고딕',NanumGothic,Helvetica,sans-serif;
+  padding: 0px 15px 0px 26px;
+  box-sizing: border-box;
+}
+
+#header #gnbNav #gnb li > ul > li > ul a:before {
+  content: '';
+  position: absolute;
+  left: 17px;
+  top: 10px;
+  width: 3px;
+  height: 3px;
+  background-color: #999;
+  border-radius: 100%;
+}
+
 
 /*-----------------------------------*/
 
