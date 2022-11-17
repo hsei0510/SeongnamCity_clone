@@ -178,11 +178,9 @@ h1,h2,h3,h4,h5,h6 { line-height: 1; margin: 0; padding: 0; font-weight: 600; fon
 #header .gnb_area .btnTopArea {
   position: absolute;
   top: 31px;
-  /* right: 50%; */
-  right: 0;
+  right: 50%;
   display: flex;
-  /* margin-right: -700px; */
-  margin-right: 10%;
+  margin-right: -700px;
   z-index: 402;
 }
 
@@ -318,6 +316,12 @@ h1,h2,h3,h4,h5,h6 { line-height: 1; margin: 0; padding: 0; font-weight: 600; fon
   font-family: '맑은 고딕','Malgun Gothic','나눔고딕',NanumGothic,Helvetica,sans-serif;
   padding: 0px 15px 0px 26px;
   box-sizing: border-box;
+}
+
+#header #gnbNav #gnb li > ul > li > ul a:hover {
+  color: #d84048;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 #header #gnbNav #gnb li > ul > li > ul a:before {
